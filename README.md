@@ -22,3 +22,18 @@ This is where the main logic of the program. It takes in arguments from the comm
 2. `drawHex`: draw hexagon starting at position p,using the given tile pattern.
 3. `drawHexCol`: adds a column of n hexagons, each of whose biomes are chosen randomly to the world at position p. Each of the hexagons are of size s.
 4. `drawWorld`: pseudorandomly generates a hexWorld.
+
+## TileEngine 
+
+
+This class mainly supports the generator to render a world. The code to generate a world consists of three main parts:
+1. initialize the tile rendering engine.
+2. generate a two dimensional `TETile[][]` array.
+3. Use the tile rendering engine to display the `TETile[][]` array.
+
+* This class is provided.
+## TETile
+This object is the single tile in the world. A 2D array of tiles make up a board, and can be drawn to the screen using the TERenderer class.
+It has character, color, description.
+
+* This class is provided.
